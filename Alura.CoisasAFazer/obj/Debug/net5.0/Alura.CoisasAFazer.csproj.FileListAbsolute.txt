@@ -125,3 +125,5 @@ C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\obj\Debug\net5.0\Alura.CoisasAFa
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\obj\Debug\net5.0\Alura.CoisasAFazer.genruntimeconfig.cache
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Castle.Core.dll
+C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Moq.dll

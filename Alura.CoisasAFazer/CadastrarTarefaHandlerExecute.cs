@@ -6,6 +6,7 @@ using Xunit;
 using System.Linq;
 using Alura.CoisasAFazer.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using Moq;
 
 namespace Alura.CoisasAFazer
 {
@@ -39,5 +40,28 @@ namespace Alura.CoisasAFazer
 
         }
 
+
+        [Fact]
+        public void QuandoExceptionForLancadaRestultadoIsSucessDeveSerFalse()
+        {
+            //arranje
+            var comando = new CadastraTarefa("Estudar Xunit", new Categoria("Estudo"), new DateTime(2021, 12, 31));
+
+            var mock = new Mock<IRepositorioTarefas>();
+
+            mock.Setup(r => r.IncluirTarefas(It.IsAny<Tarefa[]>()))
+                .Throws(new Exception("Houve um erro na inclusão de tarefas"));
+
+            var repo = mock.Object;
+
+            var handler = new CadastraTarefaHandler(repo);
+
+            //act
+            CommandResult resultado = handler.Execute(comando);
+
+            //assert
+
+            Assert.False(resultado.IsSucess);
+        }
     }
 }
