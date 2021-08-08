@@ -4,6 +4,8 @@ using Alura.CoisasAFazer.Services.Handlers;
 using System;
 using Xunit;
 using System.Linq;
+using Alura.CoisasAFazer.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 namespace Alura.CoisasAFazer
 {
@@ -15,7 +17,13 @@ namespace Alura.CoisasAFazer
             //arranje
             var comando = new CadastraTarefa("Estudar Xunit", new Categoria("Estudo"), new DateTime(2021, 12, 31));
 
-            var repo = new RepositorioFake();
+            var options = new DbContextOptionsBuilder<DbTarefasContext>()
+                .UseInMemoryDatabase("DbTarefasContext")
+                .Options;
+
+            var contexto = new DbTarefasContext(options);
+
+            var repo = new RepositorioTarefa(contexto);
 
             var handler = new CadastraTarefaHandler(repo);
 
@@ -30,5 +38,6 @@ namespace Alura.CoisasAFazer
             //executar o comando
 
         }
+
     }
 }

@@ -17,9 +17,6 @@ C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.Entit
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
-C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.Extensions.Configuration.dll
-C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
@@ -35,9 +32,7 @@ C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.TestP
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\NuGet.Frameworks.dll
-C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Remotion.Linq.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\System.Data.SqlClient.dll
-C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\System.Interactive.Async.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\xunit.abstractions.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\xunit.assert.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\xunit.core.dll
@@ -128,3 +123,5 @@ C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\obj\Debug\net5.0\Alura.CoisasAFa
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\obj\Debug\net5.0\ref\Alura.CoisasAFazer.dll
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\obj\Debug\net5.0\Alura.CoisasAFazer.pdb
 C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\obj\Debug\net5.0\Alura.CoisasAFazer.genruntimeconfig.cache
+C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\src\CSharpTestesUnitarios\Alura.CoisasAFazer\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
