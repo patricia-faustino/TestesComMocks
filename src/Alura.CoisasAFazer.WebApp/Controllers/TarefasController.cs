@@ -3,6 +3,7 @@ using Alura.CoisasAFazer.WebApp.Models;
 using Alura.CoisasAFazer.Core.Commands;
 using Alura.CoisasAFazer.Services.Handlers;
 using Alura.CoisasAFazer.Infrastructure;
+using Microsoft.Extensions.Logging;
 
 namespace Alura.CoisasAFazer.WebApp.Controllers
 {
@@ -11,6 +12,8 @@ namespace Alura.CoisasAFazer.WebApp.Controllers
     public class TarefasController : ControllerBase
     {
         IRepositorioTarefas _repo;
+        ILogger<CadastraTarefaHandler> _logger;
+
 
         [HttpPost]
         public IActionResult EndpointCadastraTarefa(CadastraTarefaVM model)
@@ -23,7 +26,7 @@ namespace Alura.CoisasAFazer.WebApp.Controllers
             }
 
             var comando = new CadastraTarefa(model.Titulo, categoria, model.Prazo);
-            var handler = new CadastraTarefaHandler(_repo);
+            var handler = new CadastraTarefaHandler(_repo, _logger);
             handler.Execute(comando);
             return Ok();
         }

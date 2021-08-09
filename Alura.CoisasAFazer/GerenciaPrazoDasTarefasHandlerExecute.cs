@@ -56,6 +56,7 @@ namespace Alura.CoisasAFazer
             var comando = new GerenciaPrazoDasTarefas(new DateTime(2021,1,1));
 
             var handler = new GerenciaPrazoDasTarefasHandler(repo);
+
             //act
             handler.Execute(comando);
 
