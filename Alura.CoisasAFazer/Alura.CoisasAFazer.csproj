@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.8" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
     <PackageReference Include="Moq" Version="4.16.1" />
@@ -24,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\src\Alura.CoisasAFazer.Core\Alura.CoisasAFazer.Core.csproj" />
     <ProjectReference Include="..\src\Alura.CoisasAFazer.Services\Alura.CoisasAFazer.Services.csproj" />
+    <ProjectReference Include="..\src\Alura.CoisasAFazer.WebApp\Alura.CoisasAFazer.WebApp.csproj" />
   </ItemGroup>
 
 </Project>

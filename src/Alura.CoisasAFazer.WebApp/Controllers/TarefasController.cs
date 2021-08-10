@@ -14,6 +14,11 @@ namespace Alura.CoisasAFazer.WebApp.Controllers
         IRepositorioTarefas _repo;
         ILogger<CadastraTarefaHandler> _logger;
 
+        public TarefasController(IRepositorioTarefas repo, ILogger<CadastraTarefaHandler> logger)
+        {
+            _repo = repo;
+            _logger = logger;
+        }
 
         [HttpPost]
         public IActionResult EndpointCadastraTarefa(CadastraTarefaVM model)
@@ -27,8 +32,10 @@ namespace Alura.CoisasAFazer.WebApp.Controllers
 
             var comando = new CadastraTarefa(model.Titulo, categoria, model.Prazo);
             var handler = new CadastraTarefaHandler(_repo, _logger);
-            handler.Execute(comando);
-            return Ok();
+            var resultado = handler.Execute(comando);
+            if(resultado.IsSucess)
+                return Ok();
+            return StatusCode(500);
         }
     }
 }
